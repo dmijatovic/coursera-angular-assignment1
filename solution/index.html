@@ -8,12 +8,17 @@
 </head>
 <body data-ng-app="dmApp">
 <section data-ng-controller="LunchCheckCtrl">
+    <!-- section title -->
+    <h1>Coursera Angular Assignment 1</h1>
+    <!-- message area -->
     <p data-ng-class="msgClass">
         {{checkMsg}}
     </p>
-
+    <!-- input area -->
     <input type="text" size=50 data-ng-model="itemsList">
     <button data-ng-click="checkItemsList()">Check amount!</button>
+    <!-- warning area -->
+    <p class="front-red">Note: the app <b>excludes</b> empty items from total item count.</p>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
 <script src="js/app.js"></script>

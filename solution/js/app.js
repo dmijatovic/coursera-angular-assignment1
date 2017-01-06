@@ -18,7 +18,7 @@ function lunchCheckCtrl(scope){
     //items holder
     scope.itemsList="";
     //default message
-    scope.checkMsg="Please enter items separated by ','";
+    scope.checkMsg="Please enter your items separated by comma (,)";
     //default class
     scope.msgClass="front-green";
     //check function 
