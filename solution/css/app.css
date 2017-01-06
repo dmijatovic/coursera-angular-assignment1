@@ -1,0 +1,23 @@
+/*
+    Few basic classes
+*/
+
+.front-red{
+    color:red;
+    background-color: #ccc;
+}
+
+.front-green{
+    color:green;
+    background-color: #ccc; 
+}
+
+.back-red{
+    color:#fff;
+    background-color:red;
+}
+
+.back-green{
+    color:#fff;
+    background-color:green; 
+}
