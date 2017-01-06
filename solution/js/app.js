@@ -27,7 +27,11 @@ function lunchCheckCtrl(scope){
         //remove empty items if any
         items = getValidItems(scope.itemsList.split(","));
         if(items.length==0){
-            scope.checkMsg="Please enter data first.";
+            if (scope.itemsList!=""){
+                scope.checkMsg="Please enter VALID data first (see note below).";
+            }else{
+                scope.checkMsg="Please enter data first.";
+            }            
             scope.msgClass = "back-red";
         }else if (items.length < 4){
             scope.checkMsg = `Enojoy your ${items.length} items :-)`;
